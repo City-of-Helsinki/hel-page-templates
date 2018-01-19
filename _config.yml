@@ -13,17 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Server Error
+title: Page Template
 email: dev@hel.fi
 description: >- # this means to ignore newlines until "baseurl:"
-  Server Error - City of Helsinki
+  Page Template - City of Helsinki
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  City-of-Helsinki
 
-repository: "terotic/http-status-pages"
+repository: "terotic/hel-page-templates"
 # baseurl: "/http-status-pages"
-url : https://terotic.github.io/http-status-pages/
+url : https://terotic.github.io/hel-page-templates/
 
 # Build settings
 destination: docs
