@@ -1,0 +1,185 @@
+---
+---
+
+@import "bootstrap";
+
+$brand-light:  $hel-copper;
+$brand-dark:  $hel-tram;
+
+//$brand-light:  map-get($theme-colors, primary);
+//$brand-dark:  map-get($theme-colors, secondary);
+
+    .icon {
+      /* Lets the icon inherit the text color. */
+      fill: currentColor;
+
+      /* Inherit the text’s size too. Also allows sizing
+         the icon by changing its font-size. */
+      width: 1em !important;
+      height: 1em !important;
+
+      /* Nice visual alignment for icons alongside text.
+         (I got a few questions about this and: with most
+         fonts and styles, this works better than just
+         vertical-align:middle. Try it and see what you
+         like best. */
+      vertical-align: -0.1em;
+
+      /* Paths and strokes that overflow the viewBox can
+         show in IE. If you use normalize.css, it already
+         sets this. */
+      overflow: hidden;
+    }
+
+.navbar-brand {
+  svg {
+    height: 36px;
+  }
+}
+
+.service-navbar {
+  background-color: $brand-light;
+}
+
+
+.hero-section {
+  min-height: 20rem;
+  background-position: center;
+  background-size: cover;
+  padding: ($spacer * 3) 0 ($spacer * 8);
+
+  @include media-breakpoint-up(sm) {
+    min-height: 24rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    min-height: 28rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    min-height: 32rem;
+  }
+}
+
+.hero-content {
+  padding: ($spacer * 2) 0;
+  text-shadow: 1px 1px 4px rgba(#000, 0.2);
+
+  @include media-breakpoint-up(md) {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: ($spacer * 5) 0;
+    h1 {
+      font-size: 5rem;
+    }
+  }
+
+  &.hero-content--inverse {
+    color: #FFFFFF;
+    h1, h2, h3, h4 , h5 ,h6, .lead {
+      color: #FFFFFF;
+    }
+  }
+}
+
+/* Site footer */
+
+.site-footer {
+  position: relative;
+  min-height: 14em;
+  clear:both;
+  background-color: $black;
+  color: #ffffff;
+  padding: ($spacer * 8) 0;
+
+  &::before {
+    content: " ";
+    @include koro("pulse", $black, 400);
+    width: 100%;
+    height: $spacer * 3;
+    position: absolute;
+    top: $spacer * -3;
+  }
+}
+
+.site-footer a {
+  color: #fff;
+}
+
+.footer-branding .footer-logo {
+  margin: 0 auto 1em;
+  max-width: 8em;
+}
+
+.site-footer .footer-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-column {
+  text-align: center;
+}
+
+.site-footer-small-print {
+  margin-top: 2em;
+  //text-align: right;
+}
+
+.small-print-nav {
+  color: #ebedf1;
+  font-size: 14px;
+}
+
+
+.cards-section {
+  position: relative;
+  background-color: $brand-light;
+  padding: ($spacer * 5) 0 ($spacer * 8);
+
+  &::before {
+    content: " ";
+    @include koro("pulse", $brand-light, 400);
+    width: 100%;
+    height: $spacer * 3;
+    position: absolute;
+    top: $spacer * -3;
+  }
+}
+
+.map-section {
+  position: relative;
+  background-color: $brand-dark;
+  padding: ($spacer * 5) 0 ($spacer * 8);
+  color: $white;
+  h1, h2, h3, h4, h5, h6 {
+    color: $white;
+  }
+
+  &::before {
+    content: " ";
+    @include koro("pulse", $brand-dark, 400);
+    width: 100%;
+    height: $spacer * 3;
+    position: absolute;
+    top: $spacer * -3;
+  }
+}
+
+.calculator-section {
+  position: relative;
+  background-color: $brand-light;
+  padding: ($spacer * 5) 0 ($spacer * 8);
+
+  &::before {
+    content: " ";
+    @include koro("pulse", $brand-light, 400);
+    width: 100%;
+    height: $spacer * 3;
+    position: absolute;
+    top: $spacer * -3;
+  }
+}
