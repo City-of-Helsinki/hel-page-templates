@@ -115,13 +115,11 @@ layout: default
 <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-        <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" style="position: absolute; top: 10px; right: 10px; font-size: 32px; line-height: 24px;" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
         <div class="feedback-frame">
-			    <iframe src="feedback.html" style="width: 100%; height: 480px; border: 0; display: block;" /></iframe>
+			    <iframe src="feedback.html" style="width: 100%; height: 480px; border: 0; display: block;" ></iframe>
 		    </div>
     </div>
   </div>
@@ -134,3 +132,7 @@ layout: default
         </div>
     </a>
 </div>
+
+  <a href="" data-toggle="modal" data-target="#feedbackModal" class="feedback-bubble">
+    <span>Anna palautetta</span>
+  </a>

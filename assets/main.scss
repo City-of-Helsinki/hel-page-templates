@@ -183,3 +183,41 @@ $brand-dark:  $hel-tram;
     top: $spacer * -3;
   }
 }
+
+.feedback-bubble {
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+  z-index: 8010;
+  width: 100px;
+  height: 100px;
+  background: $hel-suomenlinna;
+  border-radius: 50%;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    z-index: 8012;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    background: $hel-suomenlinna;
+  }
+}
+
+
+
+
