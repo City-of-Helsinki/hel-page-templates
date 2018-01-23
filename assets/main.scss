@@ -197,6 +197,7 @@ $brand-dark:  $hel-tram;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid #FFF;
 
   span {
     display: block;
@@ -212,11 +213,13 @@ $brand-dark:  $hel-tram;
   &::before {
     content: "";
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: -2px;
+    bottom: -2px;
     width: 40px;
     height: 40px;
     background: $hel-suomenlinna;
+    border-bottom: 2px solid #FFF;
+    border-right: 2px solid #FFF;
   }
 
   &:hover {
