@@ -189,8 +189,8 @@ $brand-dark:  $hel-tram;
   bottom: 1em;
   left: 1em;
   z-index: 8010;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background: $hel-suomenlinna;
   border-radius: 50%;
   color: $white;
@@ -201,8 +201,10 @@ $brand-dark:  $hel-tram;
   span {
     display: block;
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
     line-height: 1;
     z-index: 8012;
   }
@@ -212,9 +214,19 @@ $brand-dark:  $hel-tram;
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background: $hel-suomenlinna;
+  }
+  
+  &:hover {
+    color: $white;
+    background: darken($hel-suomenlinna, 10%);
+    text-decoration: none;
+    
+    &::before {
+      background: darken($hel-suomenlinna, 10%);
+    }
   }
 }
 
