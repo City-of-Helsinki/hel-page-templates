@@ -188,7 +188,7 @@ $brand-dark:  $hel-tram;
   position: fixed;
   bottom: 1em;
   left: 1em;
-  z-index: 8010;
+  z-index: 1040;
   width: 80px;
   height: 80px;
   background: $hel-suomenlinna;
@@ -206,7 +206,7 @@ $brand-dark:  $hel-tram;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     line-height: 1;
-    z-index: 8012;
+    z-index: 1042;
   }
 
   &::before {
@@ -218,12 +218,12 @@ $brand-dark:  $hel-tram;
     height: 40px;
     background: $hel-suomenlinna;
   }
-  
+
   &:hover {
     color: $white;
     background: darken($hel-suomenlinna, 10%);
     text-decoration: none;
-    
+
     &::before {
       background: darken($hel-suomenlinna, 10%);
     }
