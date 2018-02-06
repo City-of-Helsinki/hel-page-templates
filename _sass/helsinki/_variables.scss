@@ -1,0 +1,21 @@
+// Variables-hel
+//
+// Helsinki-specific fonts, color variables and defaults.
+//
+// You can find variable files (in sake for good documentation) split in the helsinki/ folder.
+
+
+// Borders
+
+//$border-width: 2px;
+$border-radius:          0;
+$border-radius-lg:       0;
+$border-radius-sm:       0;
+
+@import 'fonts';
+@import 'colors';
+@import 'buttons';
+@import 'misc';
+
+
+// Add new files above this line
