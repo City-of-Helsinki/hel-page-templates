@@ -1,0 +1,46 @@
+<h1>Kiinnostukset</h1>
+<p>Valitse sinua kiinnostavia aiheita, joiden perusteella sinulle voidaan suositella sisältöjä eri palveluissa tai lähettää ilmoituksia erillisten valintojesi mukaisesti.</p>
+<h2>Aiheet</h2>
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action active">Kulttuuri</a>
+  <a href="#" class="list-group-item list-group-item-action">Talous</a>
+  <a href="#" class="list-group-item list-group-item-action">Tekniikka</a>
+  <a href="#" class="list-group-item list-group-item-action">Politiikka</a>
+</div>
+<h2>Alueet</h2>
+<p class="lead">Valitse kartalta sinua kiinnostavat alueet</p>
+<svg width="800" height="400" id="areamap"></svg>
+<h2>Päätöksenteko</h2>
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action active">Kaavoitus</a>
+  <a href="#" class="list-group-item list-group-item-action">Lupakäsittely</a>
+  <a href="#" class="list-group-item list-group-item-action">Verotus</a>
+  <a href="#" class="list-group-item list-group-item-action">Ympäristö</a>
+  <a href="#" class="list-group-item list-group-item-action">Sosiaalitoimi</a>
+  <a href="#" class="list-group-item list-group-item-action">Opetus</a>
+</div>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/topojson.v2.min.js"></script>
+<script>
+
+var svg = d3.select("#areamap");
+
+var path = d3.geoPath();
+
+d3.json("assets/helsinki_pienalueet_masked_web_simple.json", function(error, hki) {
+  if (error) throw error;
+
+  svg.append("g")
+      .attr("class", "counties")
+    .selectAll("path")
+    .data(topojson.feature(hki, hki.objects.helsinki_pienalueet_masked_web).features)
+    .enter().append("path")
+      .attr("d", path);
+
+  svg.append("path")
+      .attr("class", "county-borders")
+      .attr("d", path(topojson.mesh(hki, hki.objects.helsinki_pienalueet_masked_web, function(a, b) { return a !== b; })));
+});
+
+</script>
