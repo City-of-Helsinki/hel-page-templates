@@ -33,12 +33,43 @@
   background-color: $brand-light;
 }
 
+.content {
+  margin-bottom: $spacer * 2;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: $spacer *2;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
 
 .hero-section {
+  position: relative;
   min-height: 20rem;
   background-position: center;
   background-size: cover;
   padding: ($spacer * 3) 0 ($spacer * 8);
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .container {
+    z-index: 2;
+  }
+
+  a {
+    color: $white;
+  }
 
   @include media-breakpoint-up(sm) {
     min-height: 24rem;
@@ -56,17 +87,19 @@
 .hero-content {
   padding: ($spacer * 2) 0;
   text-shadow: 1px 1px 4px rgba(#000, 0.2);
+  position: relative;
+  z-index: 1;
 
   @include media-breakpoint-up(md) {
     h1 {
-      font-size: 4rem;
+      font-size: 5rem;
     }
   }
 
   @include media-breakpoint-up(lg) {
     padding: ($spacer * 5) 0;
     h1 {
-      font-size: 5rem;
+      font-size: 6rem;
     }
   }
 
@@ -95,6 +128,12 @@
     height: $spacer * 3;
     position: absolute;
     top: $spacer * -3;
+  }
+
+  @include media-breakpoint-down(sm) {
+    &::before {
+      @include koro("pulse", $hel-coat, 100);
+    }
   }
 }
 
@@ -138,7 +177,11 @@
   padding: ($spacer * 4) 0 ($spacer * 8);
 }
 
-.cards-section {
+.section-header {
+  margin-bottom: $spacer * 2;
+}
+
+.section--intro {
   position: relative;
   background-color: $brand-light;
   padding: ($spacer * 5) 0 ($spacer * 8);
@@ -150,6 +193,44 @@
     height: $spacer * 4.5;
     position: absolute;
     top: $spacer * -4.5;
+  }
+}
+
+.section--cards {
+  position: relative;
+  background-color: $brand-dark;
+  padding: ($spacer * 5) 0 ($spacer * 8);
+
+  .section-header {
+    color: $white;
+  }
+
+  &::before {
+    content: " ";
+    @include koro("beat", $brand-dark, 500);
+    width: 100%;
+    height: $spacer * 4.5;
+    position: absolute;
+    top: $spacer * -4.5;
+  }
+}
+
+.section--faq {
+  position: relative;
+  background-color: $white;
+  padding: ($spacer * 5) 0 ($spacer * 8);
+  color: $brand-dark;
+  h1, h2, h3, h4, h5, h6 {
+    color: $brand-dark;
+  }
+
+  &::before {
+    content: " ";
+    @include koro("beat", $white, 300);
+    width: 100%;
+    height: $spacer * 3;
+    position: absolute;
+    top: $spacer * -3;
   }
 }
 
@@ -280,7 +361,7 @@
 .service-card {
   height: 100%;
   margin-bottom: $spacer * 3;
-  border-bottom: $spacer solid $hel-fog;
+  border-bottom: $spacer solid $brand-dark;
 }
 
 .oma-faq {
