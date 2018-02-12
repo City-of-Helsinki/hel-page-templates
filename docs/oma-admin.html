@@ -106,54 +106,140 @@
       <div class="col-md-8">
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-              <h1>Profiili</h1>
-<h2>Perustiedot</h2>
+              <section class="section-header">
+  <h1>Profiili</h1>
+  <p class="lead">Muokkaa oma.helsinki -profiilisi tietoja.</p>
+</section>
+<section class="oma-admin-section">
+  <h2>Tilin perustiedot</h2>
+  <p class="lead text-muted">Ei näytetä julkisesti</p>
+  <form>
+    <div class="form-row">
+      <div class="col">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Etunimi</label>
+          <input type="text" class="form-control" placeholder="First name">
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Sukunimi</label>
+          <input type="text" class="form-control" placeholder="Last name">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Sähköposti</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+    </div>
+    <button type="submit" class="btn btn-primary">Tallenna muutokset</button>
+  </form>
+</section>
 
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Sähköposti</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+<section class="oma-admin-section">
+  <h2>Profiilitiedot</h2>
+  <p class="lead text-muted">Näytetään palveluissa joissa kommunikoit muiden käyttäjien kanssa</p>
+  <form>
+    <div class="form-row">
+      <div class="col"><h5>Profiilikuva</h5></div>
+    </div>
+    <div class="form-row">
+      <div class="col">
+        <div class="form-group">
+          <img class="user-avatar img-thumbnail"  src="https://source.unsplash.com/collection/787231/120x120"/>
+          <small id="emailHelp" class="form-text text-muted">cajsa-avatar.jpg</small>
+          <div class=""><button type="button" class="btn btn-danger btn-sm">Poista kuva</button></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label>Valitse uuusi profiilikuva</label>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="customFile">
+            <label class="custom-file-label" for="customFile">Valitse kuvatiedosto</label>
+            <small id="emailHelp" class="form-text text-muted">Kuvan sivun pituus vähintään 200px ja enintään 1200px. Tiedostomuoto jpg tai png.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Nimimerkki</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Crazy Cat Lady">
+      <small id="emailHelp" class="form-text text-muted">Nimimerkkiä käytetään esimerkiksi kun julkaiset kommentteja julkisiin keskusteluihin</small>
+    </div>
 
-<h3>Profiilikuva</h3>
-<h3>Sähköposti</h3>
-<h3>Salasana</h3>
-<h3>Nimimerkki</h3>
-
+    <button type="submit" class="btn btn-primary">Tallenna muutokset</button>
+  </form>
+</section>
             </div>
             <div class="tab-pane fade" id="pills-interests" role="tabpanel" aria-labelledby="pills-interests-tab">
-              <h1>Kiinnostukset</h1>
-<p>Valitse sinua kiinnostavia aiheita, joiden perusteella sinulle voidaan suositella sisältöjä eri palveluissa tai lähettää ilmoituksia erillisten valintojesi mukaisesti.</p>
-<h2>Aiheet</h2>
-<div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action active">Kulttuuri</a>
-  <a href="#" class="list-group-item list-group-item-action">Talous</a>
-  <a href="#" class="list-group-item list-group-item-action">Tekniikka</a>
-  <a href="#" class="list-group-item list-group-item-action">Politiikka</a>
-</div>
-<h2>Alueet</h2>
-<p class="lead">Valitse kartalta sinua kiinnostavat alueet</p>
-<svg width="800" height="400" id="areamap"></svg>
-<h2>Päätöksenteko</h2>
-<div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action active">Kaavoitus</a>
-  <a href="#" class="list-group-item list-group-item-action">Lupakäsittely</a>
-  <a href="#" class="list-group-item list-group-item-action">Verotus</a>
-  <a href="#" class="list-group-item list-group-item-action">Ympäristö</a>
-  <a href="#" class="list-group-item list-group-item-action">Sosiaalitoimi</a>
-  <a href="#" class="list-group-item list-group-item-action">Opetus</a>
-</div>
+              <section class="section-header">
+  <h1>Kiinnostukset</h1>
+  <p class="lead">Valitse sinua kiinnostavia aiheita, joiden perusteella sinulle voidaan suositella sisältöjä eri palveluissa tai lähettää ilmoituksia erillisten valintojesi mukaisesti.</p>
+</section>
+<section class="oma-admin-section">
+  <h2>Aiheet</h2>
+  <p class="lead text-muted">Millaisista aiheista olet kiinnostunut?</p>
+  <div class="row">
+    <div class="col">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">Kulttuuri</a>
+        <a href="#" class="list-group-item list-group-item-action active">Talous</a>
+        <a href="#" class="list-group-item list-group-item-action">Tekniikka</a>
+        <a href="#" class="list-group-item list-group-item-action">Politiikka</a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">Kulttuuri</a>
+        <a href="#" class="list-group-item list-group-item-action">Talous</a>
+        <a href="#" class="list-group-item list-group-item-action active">Tekniikka</a>
+        <a href="#" class="list-group-item list-group-item-action">Politiikka</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section class="oma-admin-section">
+  <h2>Alueet</h2>
+  <p class="lead text-muted">Mitä Helsingin alueita koskevia asioita haluat seurata?</p>
+  <div class="card">
+    <div class="card-body">
+      <svg width="600" height="400" id="areamap"viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet"></svg>
+      <ul class="list-inline">
+        <li class="list-inline-item"><span class="badge badge-pill badge-primary">Alppila &times;</span></li>
+        <li class="list-inline-item"><span class="badge badge-pill badge-primary">Kruunuhaka &times;</span></li>
+        <li class="list-inline-item"><span class="badge badge-pill badge-primary">Malminkartano &times;</span></li>
+        <li class="list-inline-item"><span class="badge badge-pill badge-primary">Viikinmäki &times;</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="oma-admin-section">
+  <h2>Päätöksenteko</h2>
+  <p class="lead text-muted">Haluatko tietää päätökseentekoon liittyvistä asioista?</p>
+  <div class="row">
+    <div class="col">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">Kaavoitus</a>
+        <a href="#" class="list-group-item list-group-item-action">Lupakäsittely</a>
+        <a href="#" class="list-group-item list-group-item-action">Verotus</a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">Ympäristö</a>
+        <a href="#" class="list-group-item list-group-item-action active">Sosiaalitoimi</a>
+        <a href="#" class="list-group-item list-group-item-action">Opetus</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://d3js.org/topojson.v2.min.js"></script>
@@ -181,78 +267,112 @@ d3.json("assets/helsinki_pienalueet_masked_web_simple.json", function(error, hki
 </script>
             </div>
             <div class="tab-pane fade" id="pills-services" role="tabpanel" aria-labelledby="pills-services-tab">
-                            <h1>Liitetyt palvelut</h1>
-              <p>Voit käyttää Helsinki-tililläsi useita Helsingin kaupungin palveluja sekä tiettyjä kolmansien osapuolien palveluja.</p>
-              <div id="accordion">
-                <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Helsinki-sovellus
-                      </button>
-                    </h5>
-                  </div>
+              <section class="section-header">
+  <h1>Liitetyt palvelut</h1>
+  <p class="lead">Voit käyttää Helsinki-tililläsi useita Helsingin kaupungin palveluja sekä tiettyjä kolmansien osapuolien palveluja.</p>
+</section>
 
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body">
-                      <p>Käyttäjä löytää kiinnostavia tekemisen kohteita, saa tietoa alueiden tapahtumista ja oman asiointinsa etenemisestä.</p>
-                      <h4>Palvelu saa tietää sinusta:</h4>
-                      <ul>
-                        <li>Tilin perustiedot</li>
-                        <li>Taustatiedot</li>
-                        <li>Kiinnostukset</li>
-                        <li>Historia</li>
-                      </ul>
-                      <button class="btn btn-primary">Poista yhteys</button>
-                      <p>Käytetty viimeksi: 11.3.2017 klo 18:55</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Varaamo
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Kerrokantasi
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h1>Palveluita joihin et ole vielä liittänyt tiliäsi</h1>
-              <h2>....</h2>
+<section class="oma-admin-section">
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h4 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Helsinki-sovellus
+        </button>
+      </h4>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        <p>Käyttäjä löytää kiinnostavia tekemisen kohteita, saa tietoa alueiden tapahtumista ja oman asiointinsa etenemisestä.</p>
+        <h5>Palvelu saa tietää sinusta:</h5>
+        <ul>
+          <li>Tilin perustiedot</li>
+          <li>Taustatiedot</li>
+          <li>Kiinnostukset</li>
+          <li>Historia</li>
+        </ul>
+        <button class="btn btn-outline-primary">Poista yhteys</button>
+        <p>Käytetty viimeksi: 11.3.2017 klo 18:55</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h4 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Varaamo
+        </button>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h4 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Kerrokantasi
+        </button>
+      </h4>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="oma-admin-section">
+<h2>Palveluita joihin et ole vielä liittänyt tiliäsi</h2>
+<h2>....</h2>
+</section>
             </div>
             <div class="tab-pane fade" id="pills-history" role="tabpanel" aria-labelledby="pills-history-tab">
-                            <h1>Historia</h1>
-              <p class="lead">Historiaan kertyvät tiedot palvelujen käytöstä, kun olet kirjautuneena sisään Helsinki-tililläsi.</p>
-              <h2>11.3.2017</h2>
-              <small>Varaamo</small>
-              <h5>Vinyylileikkuri ja lämpöprässi</h5>
+              <section class="section-header">
+  <h1>Historia</h1>
+  <p class="lead">Historiaan kertyvät tiedot palvelujen käytöstä, kun olet kirjautuneena sisään Helsinki-tililläsi.</p>
+</section>
+<section class="oma-admin-section">
+  <div class="card">
+    <div class="card-header">
+      9.2.2018 - Kerrokantasi
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Kirjautuminen</h5>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      11.3.2017 - Varaamo
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Vinyylileikkuri ja lämpöprässi</h5>
+      <p class="card-text">Varaus tehty varaamo.hel.fi.</p>
+    </div>
+  </div>
+</section>
+
             </div>
             <div class="tab-pane fade" id="pills-notifications" role="tabpanel" aria-labelledby="pills-notifications-tab">
-                            <h1>Asetukset</h1>
-              <h2>Viestit</h2>
-              <p>Aliquam quis vulputate nibh. Phasellus rhoncus maximus justo, vitae consequat ex scelerisque ac. Phasellus vel tortor est. Quisque ornare metus ipsum, a consequat nulla rutrum et. Etiam tempor elit sit amet iaculis consequat. Ut tincidunt justo et interdum porta. Nam interdum imperdiet quam nec dapibus.</p>
-
-              <h2>oma.helsinki</h2>
+              <section class="section-header">
+  <h1 class="">Asetukset</h1>
+  <P class="lead">Määrittele millaisia ja viestejä ja herätteitä oma.helsinki voi lähettää sinulle.</P>
+</section>
+<section class="oma-admin-section">
+  <h2>Viestit</h2>
+  <p>Aliquam quis vulputate nibh. Phasellus rhoncus maximus justo, vitae consequat ex scelerisque ac. Phasellus vel tortor est. Quisque ornare metus ipsum, a consequat nulla rutrum et. Etiam tempor elit sit amet iaculis consequat. Ut tincidunt justo et interdum porta. Nam interdum imperdiet quam nec dapibus.</p>
+</section>
+<section class="oma-admin-section">
+<h2>oma.helsinki</h2>
+</section>
             </div>
           </div>
       </div>

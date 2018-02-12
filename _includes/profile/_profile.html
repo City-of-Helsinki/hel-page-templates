@@ -1,24 +1,70 @@
-<h1>Profiili</h1>
-<h2>Perustiedot</h2>
+<section class="section-header">
+  <h1>Profiili</h1>
+  <p class="lead">Muokkaa oma.helsinki -profiilisi tietoja.</p>
+</section>
+<section class="oma-admin-section">
+  <h2>Tilin perustiedot</h2>
+  <p class="lead text-muted">Ei näytetä julkisesti</p>
+  <form>
+    <div class="form-row">
+      <div class="col">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Etunimi</label>
+          <input type="text" class="form-control" placeholder="First name">
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Sukunimi</label>
+          <input type="text" class="form-control" placeholder="Last name">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Sähköposti</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+    </div>
+    <button type="submit" class="btn btn-primary">Tallenna muutokset</button>
+  </form>
+</section>
 
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Sähköposti</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+<section class="oma-admin-section">
+  <h2>Profiilitiedot</h2>
+  <p class="lead text-muted">Näytetään palveluissa joissa kommunikoit muiden käyttäjien kanssa</p>
+  <form>
+    <div class="form-row">
+      <div class="col"><h5>Profiilikuva</h5></div>
+    </div>
+    <div class="form-row">
+      <div class="col">
+        <div class="form-group">
+          <img class="user-avatar img-thumbnail"  src="https://source.unsplash.com/collection/787231/120x120"/>
+          <small id="emailHelp" class="form-text text-muted">cajsa-avatar.jpg</small>
+          <div class=""><button type="button" class="btn btn-danger btn-sm">Poista kuva</button></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label>Valitse uuusi profiilikuva</label>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="customFile">
+            <label class="custom-file-label" for="customFile">Valitse kuvatiedosto</label>
+            <small id="emailHelp" class="form-text text-muted">Kuvan sivun pituus vähintään 200px ja enintään 1200px. Tiedostomuoto jpg tai png.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Nimimerkki</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Crazy Cat Lady">
+      <small id="emailHelp" class="form-text text-muted">Nimimerkkiä käytetään esimerkiksi kun julkaiset kommentteja julkisiin keskusteluihin</small>
+    </div>
 
-<h3>Profiilikuva</h3>
-<h3>Sähköposti</h3>
-<h3>Salasana</h3>
-<h3>Nimimerkki</h3>
+    <button type="submit" class="btn btn-primary">Tallenna muutokset</button>
+  </form>
+</section>

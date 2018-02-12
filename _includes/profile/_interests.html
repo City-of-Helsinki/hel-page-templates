@@ -1,24 +1,65 @@
-<h1>Kiinnostukset</h1>
-<p>Valitse sinua kiinnostavia aiheita, joiden perusteella sinulle voidaan suositella sisältöjä eri palveluissa tai lähettää ilmoituksia erillisten valintojesi mukaisesti.</p>
-<h2>Aiheet</h2>
-<div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action active">Kulttuuri</a>
-  <a href="#" class="list-group-item list-group-item-action">Talous</a>
-  <a href="#" class="list-group-item list-group-item-action">Tekniikka</a>
-  <a href="#" class="list-group-item list-group-item-action">Politiikka</a>
-</div>
-<h2>Alueet</h2>
-<p class="lead">Valitse kartalta sinua kiinnostavat alueet</p>
-<svg width="800" height="400" id="areamap"></svg>
-<h2>Päätöksenteko</h2>
-<div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action active">Kaavoitus</a>
-  <a href="#" class="list-group-item list-group-item-action">Lupakäsittely</a>
-  <a href="#" class="list-group-item list-group-item-action">Verotus</a>
-  <a href="#" class="list-group-item list-group-item-action">Ympäristö</a>
-  <a href="#" class="list-group-item list-group-item-action">Sosiaalitoimi</a>
-  <a href="#" class="list-group-item list-group-item-action">Opetus</a>
-</div>
+<section class="section-header">
+  <h1>Kiinnostukset</h1>
+  <p class="lead">Valitse sinua kiinnostavia aiheita, joiden perusteella sinulle voidaan suositella sisältöjä eri palveluissa tai lähettää ilmoituksia erillisten valintojesi mukaisesti.</p>
+</section>
+<section class="oma-admin-section">
+  <h2>Aiheet</h2>
+  <p class="lead text-muted">Millaisista aiheista olet kiinnostunut?</p>
+  <div class="row">
+    <div class="col">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">Kulttuuri</a>
+        <a href="#" class="list-group-item list-group-item-action active">Talous</a>
+        <a href="#" class="list-group-item list-group-item-action">Tekniikka</a>
+        <a href="#" class="list-group-item list-group-item-action">Politiikka</a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">Kulttuuri</a>
+        <a href="#" class="list-group-item list-group-item-action">Talous</a>
+        <a href="#" class="list-group-item list-group-item-action active">Tekniikka</a>
+        <a href="#" class="list-group-item list-group-item-action">Politiikka</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section class="oma-admin-section">
+  <h2>Alueet</h2>
+  <p class="lead text-muted">Mitä Helsingin alueita koskevia asioita haluat seurata?</p>
+  <div class="card">
+    <div class="card-body">
+      <svg width="600" height="400" id="areamap"viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet"></svg>
+      <ul class="list-inline">
+        <li class="list-inline-item"><span class="badge badge-pill badge-primary">Alppila &times;</span></li>
+        <li class="list-inline-item"><span class="badge badge-pill badge-primary">Kruunuhaka &times;</span></li>
+        <li class="list-inline-item"><span class="badge badge-pill badge-primary">Malminkartano &times;</span></li>
+        <li class="list-inline-item"><span class="badge badge-pill badge-primary">Viikinmäki &times;</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="oma-admin-section">
+  <h2>Päätöksenteko</h2>
+  <p class="lead text-muted">Haluatko tietää päätökseentekoon liittyvistä asioista?</p>
+  <div class="row">
+    <div class="col">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">Kaavoitus</a>
+        <a href="#" class="list-group-item list-group-item-action">Lupakäsittely</a>
+        <a href="#" class="list-group-item list-group-item-action">Verotus</a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">Ympäristö</a>
+        <a href="#" class="list-group-item list-group-item-action active">Sosiaalitoimi</a>
+        <a href="#" class="list-group-item list-group-item-action">Opetus</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://d3js.org/topojson.v2.min.js"></script>

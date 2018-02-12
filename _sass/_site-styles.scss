@@ -167,13 +167,13 @@
 
 .subnav-section {
   position: relative;
-  background-color: #fff;
+  background-color: $hel-fog;
   padding: ($spacer * 3) 0 $spacer;
 }
 
 .sub-content-section {
   position: relative;
-  background-color: $hel-fog;
+  background-color: $hel-silver;
   padding: ($spacer * 4) 0 ($spacer * 8);
 }
 
@@ -370,4 +370,24 @@
   a {
     color: $black;
   }
+}
+
+.oma-admin-section {
+  margin-bottom: $spacer *4;
+  h2 {
+    //margin-bottom: $spacer * 2;
+  }
+}
+
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: grey;         /* adjust as needed */
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 }
