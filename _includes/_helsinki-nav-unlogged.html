@@ -14,19 +14,12 @@
       </div>
     </li>
     <li class="nav-item dropdown">
-      <a class="nav-link user-menu__trigger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <a class="nav-link user-menu__trigger" href="#" data-toggle="modal" data-target="#loginModal">
         <svg aria-hidden="true" class="icon"><use xlink:href="assets/hel-icons.svg#user-o"></use></svg>
-        <span class="user-name">Cajsa Catterson</span>
+        <span class="user-name">Log in</span>
       </a>
-      <div class="dropdown-menu dropdown-menu-right user-menu__dropdown" aria-labelledby="navbarDropdown">
-        <span class="dropdown-header user-name">Cajsa Catterson</span>
-        <a class="dropdown-item" href="cat-tax-preferences.html">Preferences</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="oma-admin.html">Edit Profile</a>
-        <a class="dropdown-item" href="oma.html">oma.helsinki</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="index.html"><strong>Logout</strong></a>
-      </div>
     </li>
   </ul>
 </nav>
+
+{% include profile/_login.html %}

@@ -391,3 +391,55 @@
     /* symbol for "collapsed" panels */
     content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 }
+
+
+// Tunnistamo styles
+
+#loginModal .modal-body {
+  background-color: $hel-fog;
+}
+
+.content-container {
+  margin-top: $spacer;
+}
+
+.content-card {
+  padding: $spacer;
+  background-color: $white;
+  box-shadow: 3px 3px 3px rgba($black, 0.5);
+  @extend .clearfix;
+
+  header {
+    @extend .clearfix;
+
+    .service-title {
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    .logo {
+      height: 3.5em;
+      margin: -0.5em -0.5em 0 0;
+      float: right;
+    }
+  }
+}
+
+.login-method {
+  margin-bottom: $spacer / 2;
+
+  .short-description {
+    margin-top: 6px;
+  }
+
+  .ext-icon img {
+    max-height: 24px;
+    max-width: 24px;
+  }
+}
+
+.login-method__primary {
+  border-bottom: 1px solid $brand-dark;
+  border-top: 1px solid $brand-dark;
+  padding-top: 1em;
+}

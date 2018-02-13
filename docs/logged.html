@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title> Helsinki SVG icons |  </title>
+        <title> </title>
         <meta name="description" content="Page Template - City of Helsinki"/>
         <meta name="author" content=""/>
         <link rel="author" href="humans.txt"/>
@@ -34,54 +34,22 @@
       </div>
     </li>
     <li class="nav-item dropdown">
-      <a class="nav-link user-menu__trigger" href="#" data-toggle="modal" data-target="#loginModal">
+      <a class="nav-link user-menu__trigger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <svg aria-hidden="true" class="icon"><use xlink:href="assets/hel-icons.svg#user-o"></use></svg>
-        <span class="user-name">Log in</span>
+        <span class="user-name">Cajsa Catterson</span>
       </a>
+      <div class="dropdown-menu dropdown-menu-right user-menu__dropdown" aria-labelledby="navbarDropdown">
+        <span class="dropdown-header user-name">Cajsa Catterson</span>
+        <a class="dropdown-item" href="cat-tax-preferences.html">Preferences</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="oma-admin.html">Edit Profile</a>
+        <a class="dropdown-item" href="oma.html">oma.helsinki</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="index.html"><strong>Logout</strong></a>
+      </div>
     </li>
   </ul>
 </nav>
-
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="loginModalLabel">Log In</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body bg-info">
-
-              <header>
-                <!--<img src="hel-logo.svg" class="logo">-->
-                <h1 class="service-title">oma.helsinki</h1>
-              </header>
-              <p class="doc">
-                Tähän palveluun voit tunnistautua käyttämällä jotain näistä
-                kirjautumistavoista.
-              </p>
-              <div class="hel-login-methods">
-                <div class="login-methodlogin-method-fb">
-                    <a href="logged.html"
-                       class="btn btn-block btn-primary btn-social btn-fb">
-                        <span class="fa fa-facebook"></span>
-                        Facebook
-                    </a>
-                    <div class="short-description">
-                      Facebook login simulation for demonstration purposes only
-                    </div>
-                </div>
-              </div>
-              <p class="doc">
-                Etkö ole vielä oma.helsinki käyttäjä? Luo uusi tunnus <a href="oma.html">tästä</a>.
-              </p>
-
-      </div>
-    </div>
-  </div>
-</div>
-
         <nav class="navbar navbar-expand-lg navbar-light service-navbar">
   <a class="navbar-brand" href="index.html">Cat Tax Service</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -113,79 +81,116 @@
       </div>
 
       <main>
-          <h1 id="helsinki-svg-icons">Helsinki SVG icons</h1>
+          <section class="hero-section bg-light" style="background-image: url('https://source.unsplash.com/collection/139386/1600x900')">
+  <div class="container">
+    <div class="row">
+      <div class="col-11 col-md-10 col-lg-8">
+        <div class="hero-content hero-content--inverse">
+          <h1>Cat Tax Collection in Helsinki</h1>
+          <p class="lead">Take care of your cat tax payment online. (Actually we do not tax cats in Helsinki. This is for layout demonstration purposes only)</p>
+          <button type="button" class="btn btn-outline-light"  data-toggle="modal" data-target="#feedbackModal">Calculate & Pay Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<p>City of Helsinki brand identity icon set.</p>
+<section class="section section--cards">
+  <div class="container">
+    <h2 class="section-header">Taxed Cat is a Happy Cat</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="display-1"><svg aria-hidden="true" class="icon"><use xlink:href="assets/hel-icons.svg#ticket"></use></svg></h1>
+            <h5 class="card-title">Why Do I have to Pay?</h5>
+            <p class="card-text">With <a href="#">supporting</a> text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="display-1"><svg aria-hidden="true" class="icon"><use xlink:href="assets/hel-icons.svg#trash-o"></use></svg></h1>
+            <h5 class="card-title">Cat Tax Exemptions</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="display-1"><svg aria-hidden="true" class="icon"><use xlink:href="assets/hel-icons.svg#pencil"></use></svg></h1>
+            <h5 class="card-title">Calculate and Pay Now</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<h2 id="installation">Installation</h2>
+<section class="map-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 content">
+        <h2>Where can I Pay My Cat Tax?</h2>
+        <p class="lead">sdöfhn sdgjkdns fkgjlbdn fslgjkbdfs lkgjbdfns kgjnsdf klgjdsbfn gkjdsfbn lksdbnsdflg</p>
+      </div>
+      <div class="col-sm-6">
+        <div style="position: relative; width:100%; padding-bottom:62%;">
+        <iframe style="position: absolute; top: 0; left: 0; border: none; width: 100%; height: 100%;" src="https://servicemap.hel.fi/embed/unit?treenode=17&city=helsinki"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install hel-svg-icons
-</code></pre></div></div>
-<p>you only need hel-icons.svg file.</p>
+<section class="calculator-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-md-8 col-lg-6 mx-auto">
+        <h2>Cat Tax Calculator</h2>
+        <p class="lead">Fill in the form to find out how much cat tax you owe.</p>
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Name of the cat</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Chairman Meaow">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Expecting kittens? How Many?</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect2">Does your cat go out?</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+              <option>Never</option>
+              <option>Occasionally on a leash</option>
+              <option>Daily on a leash</option>
+              <option>Occasionally free</option>
+              <option>Daily free</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Describe the cat's appearance</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Calculate</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
-<h2 id="how-to-use">How to use</h2>
-
-<p>Insert icon in inline content.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;svg aria-hidden="true" class="icon"&gt;&lt;use xlink:href="path-to/dist/symbol/svg/hel-icons.svg#book"&gt;&lt;/use&gt;&lt;/svg&gt;
-</code></pre></div></div>
-
-<p>To make sure icons appear correct size depending on context include this default to styles</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;style&gt;
-  .icon {
-    width:1em;
-    height:1em
-  }
-&lt;/style&gt;
-</code></pre></div></div>
-
-<h2 id="accessibility">Accessibility</h2>
-
-<h3 id="decorative-icon">Decorative icon</h3>
-<p>When icon is used for decoration or emphasis it should be hidden from screen readers with <code class="highlighter-rouge">aria-hidden=true</code></p>
-
-<h3 id="interactive-icon-without-text">Interactive icon without text</h3>
-<p>When the icon is used without explanatory text as purely visual cue in UI you should provide a screen reader -friendly aria-label. In interactive elements this should be included in the wrapping <code class="highlighter-rouge">&lt;a&gt;</code> or <code class="highlighter-rouge">&lt;button&gt;</code> element.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="/news/" aria-label="Latest News"&gt;
-  &lt;svg aria-hidden="true"&gt;
-    &lt;use xlink:href="path-to/dist/symbol/svg/hel-icons.svg#book"&gt;&lt;/use&gt;
-  &lt;/svg&gt;
-&lt;/a&gt;
-</code></pre></div></div>
-<h3 id="informative-icon-without-text">Informative icon without text</h3>
-<p>When icon is not wrapped in interactive element, svg title can be used.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;svg&gt;
-  &lt;title&gt;Book&lt;/title&gt;
-  &lt;use xlink:href="path-to/dist/symbol/svg/hel-icons.svg#book"&gt;&lt;/use&gt;
-&lt;/svg&gt;
-</code></pre></div></div>
-
-<h2 id="browser-support">Browser support</h2>
-
-<p>This spritemap displays fine in Chrome, Safari 7.1+, Firefox, and Opera.</p>
-
-<p>For extended browser support (Safari 6, IE 6+, and Edge 12) you should use <a href="https://github.com/jonathantneal/svg4everybody">svg4everybody</a>.</p>
-
-<h2 id="contribution">Contribution</h2>
-
-<p>Clone the repository.</p>
-
-<p>Install dependencies.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install
-</code></pre></div></div>
-
-<p>Add new svg files in <code class="highlighter-rouge">src/svg/</code>. For icon naming try to follow <a href="http://fontawesome.io">Font Awesome</a> naming practices.</p>
-
-<p>Compile svg sprite file.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grunt dev
-</code></pre></div></div>
-<p>View the test page on your browser in http://localhost:9090</p>
-
-<h2 id="further-reading">Further reading</h2>
-<ul>
-  <li><a href="https://fvsch.com/code/svg-icons/how-to/">Florens Verschelde: How to work with SVG icons</a></li>
-</ul>
-
+<script id="feedback-script" data-app="" type="text/javascript" src="https://dev.hel.fi/~tituomin/feedback-widget/widget.js" ></script>
       </main>
 
         <!-- Site footer -->
