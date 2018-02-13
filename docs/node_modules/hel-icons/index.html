@@ -57,10 +57,23 @@
                 <!--<img src="hel-logo.svg" class="logo">-->
                 <h1 class="service-title">oma.helsinki</h1>
               </header>
-              <p class="doc">
-                Tähän palveluun voit tunnistautua käyttämällä jotain näistä
-                kirjautumistavoista.
-              </p>
+              <h3>Kirjaudu oma.helsinki -tunnuksella</h3>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">E-mail</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your login email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+                </div>
+                <a href="logged.html" class="btn btn-primary">Log in</a>
+                <p class="doc">
+                  Salasana unohtunut? Uusi salasanasi <a href="oma.html">tästä</a>.
+                </p>
+              </form>
+              <br>
+              <h3>Kirjaudu muun palvelun tunnuksilla</h3>
               <div class="hel-login-methods">
                 <div class="login-methodlogin-method-fb">
                     <a href="logged.html"
@@ -68,11 +81,10 @@
                         <span class="fa fa-facebook"></span>
                         Facebook
                     </a>
-                    <div class="short-description">
-                      Facebook login simulation for demonstration purposes only
-                    </div>
                 </div>
               </div>
+              <br>
+              <h3>Luo oma.helsinki -tunnus</h3>
               <p class="doc">
                 Etkö ole vielä oma.helsinki käyttäjä? Luo uusi tunnus <a href="oma.html">tästä</a>.
               </p>
