@@ -1,0 +1,114 @@
+---
+layout: cattax
+---
+
+<section class="hero-section bg-light" style="background-image: url('https://source.unsplash.com/collection/139386/1600x900')">
+  <div class="container">
+    <div class="row">
+      <div class="col-11 col-md-10 col-lg-8">
+        <div class="hero-content hero-content--inverse">
+          <h1>Cat Tax Collection in Helsinki</h1>
+          <p class="lead">Take care of your cat tax payment online. (Actually we do not tax cats in Helsinki. This is for layout demonstration purposes only)</p>
+          <button type="button" class="btn btn-outline-light"  data-toggle="modal" data-target="#feedbackModal">Calculate & Pay Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--cards">
+  <div class="container">
+    <h2 class="section-header">Taxed Cat is a Happy Cat</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="display-1"><svg aria-hidden="true" class="icon"><use xlink:href="{{ '/assets/hel-icons.svg#ticket' | relative_url }}"></use></svg></h1>
+            <h5 class="card-title">Why Do I have to Pay?</h5>
+            <p class="card-text">With <a href="#">supporting</a> text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="display-1"><svg aria-hidden="true" class="icon"><use xlink:href="{{ '/assets/hel-icons.svg#trash-o' | relative_url }}"></use></svg></h1>
+            <h5 class="card-title">Cat Tax Exemptions</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="display-1"><svg aria-hidden="true" class="icon"><use xlink:href="{{ '/assets/hel-icons.svg#pencil' | relative_url }}"></use></svg></h1>
+            <h5 class="card-title">Calculate and Pay Now</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="map-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 content">
+        <h2>Where can I Pay My Cat Tax?</h2>
+        <p class="lead">sdöfhn sdgjkdns fkgjlbdn fslgjkbdfs lkgjbdfns kgjnsdf klgjdsbfn gkjdsfbn lksdbnsdflg</p>
+      </div>
+      <div class="col-sm-6">
+        <div style="position: relative; width:100%; padding-bottom:62%;">
+        <iframe style="position: absolute; top: 0; left: 0; border: none; width: 100%; height: 100%;" src="https://servicemap.hel.fi/embed/unit?treenode=17&city=helsinki"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="calculator-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-md-8 col-lg-6 mx-auto">
+        <h2>Cat Tax Calculator</h2>
+        <p class="lead">Fill in the form to find out how much cat tax you owe.</p>
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Name of the cat</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Chairman Meaow">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Expecting kittens? How Many?</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect2">Does your cat go out?</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+              <option>Never</option>
+              <option>Occasionally on a leash</option>
+              <option>Daily on a leash</option>
+              <option>Occasionally free</option>
+              <option>Daily free</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Describe the cat's appearance</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Calculate</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script id="feedback-script" data-app="" type="text/javascript" src="https://dev.hel.fi/~tituomin/feedback-widget/widget.js" ></script>

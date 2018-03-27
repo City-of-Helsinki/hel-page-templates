@@ -1,8 +1,45 @@
-# City of Helsinki http-status pages
+# Helsinki Page Templates #
 
-Static page generator configured to create static html pages for Helsinki-style http status pages.
+Static pages for rapid prototyping and demo development purposes.
 
-## Develop
+Used for developing and testing [Open City Design](https://opencity.design) Helsinki theme. **Alpha**
 
-Documentation expanded soon. Meanwhile check Jekyll:
+## Development installation ##
+
+### Prerequisites ###
+
+* **Jekyll** - how to install at: [jekyllrb.com](https://jekyllrb.com/)
+* **Bundler** - See [bundler.io](http://bundler.io)
+* **Yarn** - See [yarnpkg.com](https://yarnpkg.com/)
+
+##### Install dependencies #####
+
+`bundle install`
+
+`yarn`
+
+##### Start development server #####
+
+`bundle exec jekyll server`
+
+Access local development site in http://127.0.0.1:4000/hel-page-templates/
+
+
+## Sites and layouts
+
+Add and edit demo sites in `pages` directory. You can add and use common layouts and includes in `_layout` and `_includes` directories.
+
+
+## Deploy
+
+Compile static site locally.
+
+`bundle exec jekyll build`
+
+Commit and push updated `docs/` directory to **master** branch.
+
+**TODO:** Setup Jekyll to serve from master branch directly without local compile.
+
+
+Read more:
 [jekyllrb.com](https://jekyllrb.com/)

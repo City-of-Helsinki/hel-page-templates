@@ -22,8 +22,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: terotic
 
 repository: "terotic/hel-page-templates"
-# baseurl: "/http-status-pages"
-url : https://terotic.github.io/hel-page-templates/
+baseurl: "/hel-page-templates"
+url : "https://terotic.github.io"
 
 # Build settings
 destination: docs
