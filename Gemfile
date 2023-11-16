@@ -21,8 +21,8 @@ source "https://rubygems.org"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-contentblocks"
-  gem "github-pages"
-  gem "jekyll-inline-svg", "~>0.0.1"
+  gem "github-pages", ">= 181"
+  gem "jekyll-inline-svg", "~> 1.0.0"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
